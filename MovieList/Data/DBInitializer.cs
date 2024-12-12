@@ -51,28 +51,28 @@ namespace MovieList.Data
             }
             context.SaveChanges();
 
-            var genrePickers = new GenrePicker[]
-            {
-            new GenrePicker{MovieID=1,GenreID=002},
-            new GenrePicker{MovieID=1,GenreID=001},
-            new GenrePicker{MovieID=1,GenreID=005},
-            new GenrePicker{MovieID=2,GenreID=002},
-            new GenrePicker{MovieID=2,GenreID=001},
-            new GenrePicker{MovieID=3,GenreID=002},
-            new GenrePicker{MovieID=3,GenreID=001},
-            new GenrePicker{MovieID=4,GenreID=003},
-            new GenrePicker{MovieID=5,GenreID=004}
+            //var genrePickers = new GenrePicker[]
+            //{
+            //new GenrePicker{MovieID=1,GenreID=002},
+            //new GenrePicker{MovieID=1,GenreID=001},
+            //new GenrePicker{MovieID=1,GenreID=005},
+            //new GenrePicker{MovieID=2,GenreID=002},
+            //new GenrePicker{MovieID=2,GenreID=001},
+            //new GenrePicker{MovieID=3,GenreID=002},
+            //new GenrePicker{MovieID=3,GenreID=001},
+            //new GenrePicker{MovieID=4,GenreID=003},
+            //new GenrePicker{MovieID=5,GenreID=004}
 
 
 
 
 
-            };
-            foreach (Genre e in Genres)
-            {
-                context.Genres.Add(e);
-            }
-            context.SaveChanges();
+            //};
+            //    foreach (Genre e in Genres)
+            //    {
+            //        context.Genres.Add(e);
+            //    }
+            //    context.SaveChanges();
         }
     }
 }

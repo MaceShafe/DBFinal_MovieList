@@ -12,7 +12,7 @@ namespace MovieList.Models
         public string MovieName { get; set; }
         public DateTime? ReleaseDate { get; set; }
 
-        public ICollection<GenrePicker> GenrePicker { get; set; }
+        public ICollection<Genre> Genres { get; set; }
 
     }
 }

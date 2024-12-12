@@ -1,5 +1,6 @@
 ﻿@model MovieList.Models.Movie
 
+
 @{
     ViewData["Title"] = "Details";
 }
@@ -30,14 +31,15 @@
                 <tr>
                     <th>Genre</th>
                 </tr>
-                @foreach (var item in Model.GenrePicker)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Genre.GenreName)
-                        </td>
-                    </tr>
-                }
+                 @foreach (var item in Model.Genres)
+                 {
+                     <tr>
+                         <td>
+                            @Html.DisplayFor(modelItem => item.GenreName)
+
+                         </td>
+                     </tr>
+                 }
                 </table>
         </dd>
 

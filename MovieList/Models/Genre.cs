@@ -13,7 +13,7 @@ namespace MovieList.Models
         [StringLength(50)]
         public string GenreName {  get; set; }
 
-        public ICollection<GenrePicker> GenrePickers { get; set; }
+        public virtual ICollection<Movie> Movies { get; set; }
 
     }
 }

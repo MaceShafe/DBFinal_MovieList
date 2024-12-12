@@ -34,8 +34,7 @@ namespace MovieList.Controllers
             }
 
             var movie = await _context.Movies
-                .Include(s => s.GenrePicker)
-                    .ThenInclude(g => g.Genre)
+                .Include(s => s.Genres)
                 .AsNoTracking()
                 .FirstOrDefaultAsync(m => m.ID == id);
 
